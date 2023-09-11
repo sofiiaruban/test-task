@@ -1,0 +1,36 @@
+:root {
+  --gap: 1rem;
+  --border: 1px solid black;
+}
+.page-wrapper {
+  display: grid;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 20px;
+  grid-gap: var(--gap);
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 100px 80px 300px 100px;
+  grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "main main main sidebar"
+    "footer footer footer footer";
+}
+.section {
+  border: var(--border); 
+}
+.page-header {
+  grid-area: header;
+}
+.page-nav {
+  grid-area: nav;
+}
+.main-content {
+  grid-area: main;
+}
+.sidebar {
+  grid-area: sidebar;
+}
+.page-footer {
+  grid-area: footer;
+}

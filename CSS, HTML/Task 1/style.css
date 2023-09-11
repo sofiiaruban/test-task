@@ -1,0 +1,37 @@
+:root {
+  --mb: 1rem;
+  --border: 1px solid black;
+  --w-full: 100%;
+}
+.page-wrapper {
+  max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px;
+}
+.section {
+  width: var(--w-full);
+  border: var(--border); 
+  margin-bottom: var(--mb);
+}
+.page-header {
+  height: 100px; 
+}
+.page-nav {
+  height: 80px;
+}
+.page-content {
+  display: flex;
+  gap: var(--mb);
+  height: 300px;
+}
+.main-content {
+  flex-basis: 60%;
+}
+.sidebar {
+  flex-basis: 40%; 
+}
+.page-footer {
+  height: 100px; 
+}

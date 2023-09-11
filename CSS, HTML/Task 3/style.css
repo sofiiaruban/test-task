@@ -1,0 +1,27 @@
+.animation-container {
+ width: 100%;
+ display: flex;
+ height: 100vh;
+ justify-content: center;
+}
+
+.animation-box {
+  align-self: center;
+  width: 100px;
+  height: 100px;
+  animation: rotation 3s linear infinite;
+}
+
+@keyframes rotation {
+   from {
+      transform: rotate(0deg);
+      background-color: red;
+   }
+   50% {
+      background-color: orange;
+   }
+   to {
+      transform: rotate(360deg);
+      background-color: green;
+   }
+}
